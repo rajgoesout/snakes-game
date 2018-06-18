@@ -12,7 +12,7 @@ function init(){
     game_over = false;
     
     food = getRandomFood();
-    score = 5;
+    score = 0;
     
     
     snake = {
@@ -134,7 +134,7 @@ function draw(){
     
     pen.fillRect(food.x*10,food.y*10,10,10);
     
-    pen.fillStyle = "white";
+    pen.fillStyle = "black";
     pen.font = "14px Roboto";
     pen.fillText("Score : "+score,10,10);
     
