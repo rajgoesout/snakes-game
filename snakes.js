@@ -5,7 +5,7 @@
 function init() {
 
     // console.log("Init");
-    canvas = document.getElementById('mycanvas');
+    canvas = document.getElementById('mycanvas'); // get id of canvas tag
     pen = canvas.getContext('2d');
     W = canvas.width;
     H = canvas.height;
@@ -155,4 +155,4 @@ function getRandomFood() {
 init();
 
 // Call Game Looper after time 't'
-var f = setInterval(gameLoop, 100);
+var f = setInterval(gameLoop, 150);
